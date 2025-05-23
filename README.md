@@ -12,7 +12,7 @@ KuroAI is a modern, responsive chatbot application built with **React** and styl
 To integrate the Gemini API, you need to provide an API key. Create a `.env` file in the project root with the following:
 
 ```plaintext
-GEMINI_API_KEY=your_gemini_api_key_here
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
 - Obtain your API key from the Gemini API dashboard.

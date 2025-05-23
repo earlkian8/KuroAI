@@ -1,6 +1,6 @@
 # KuroAI Chatbot
 
-KuroAI is a modern, responsive chatbot application built with **React** and styled with **Tailwind CSS**, leveraging the **Gemini API** to provide intelligent and interactive chat functionalities. This project aims to deliver a seamless and user-friendly chat experience with a sleek, customizable interface.
+KuroAI is a modern, responsive chatbot application built with **React** and styled with **Tailwind CSS**, leveraging the **Gemini API** to provide intelligent and interactive chat functionalities.
 
 ## Technologies Used
 - **React**: Frontend library for building the user interface.

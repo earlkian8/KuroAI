@@ -13,14 +13,13 @@ KuroAI is a modern, responsive chatbot application built with **React** and styl
 - **Tailwind CSS**: Utility-first CSS framework for rapid and responsive styling.
 - **Gemini API**: Provides the AI-powered chatbot functionality.
 - **JavaScript (ES6+)**: Core programming language for the application.
-- **CDN (jsDelivr)**: Hosts React and other dependencies for easy setup.
 
 ## Installation
 To run KuroAI locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/kuroAI.git
+   git clone https://github.com/earlkian8/KuroAI.git
    cd kuroAI
    ```
 
@@ -30,7 +29,7 @@ To run KuroAI locally, follow these steps:
 3. **Set up environment variables**:
    Create a `.env` file in the root directory and add your Gemini API key:
    ```plaintext
-   GEMINI_API_KEY=your_gemini_api_key_here
+   VITE_GEMINI_API_KEY=your_gemini_api_key_here
    ```
    See [Environment Variables](#environment-variables) for more details.
 
@@ -50,5 +49,5 @@ To integrate the Gemini API, you need to provide an API key. Create a `.env` fil
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-- Obtain your API key from the [Gemini API dashboard](https://example.com/gemini-api) (replace with the actual Gemini API provider link).
+- Obtain your API key from the Gemini API dashboard.
 - Ensure the `.env` file is added to `.gitignore` to prevent exposing your API key.

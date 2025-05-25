@@ -1,12 +1,6 @@
 # KuroAI Chatbot
 
-KuroAI is a modern, responsive chatbot application built with **React** and styled with **Tailwind CSS**, leveraging the **Gemini API** to provide intelligent and interactive chat functionalities. This project aims to deliver a seamless and user-friendly chat experience with a sleek, customizable interface.
-
-## Table of Contents
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Environment Variables](#environment-variables)
+KuroAI is a modern, responsive chatbot application built with **React** and styled with **Tailwind CSS**, leveraging the **Gemini API** to provide intelligent and interactive chat functionalities.
 
 ## Technologies Used
 - **React**: Frontend library for building the user interface.
@@ -14,39 +8,11 @@ KuroAI is a modern, responsive chatbot application built with **React** and styl
 - **Gemini API**: Provides the AI-powered chatbot functionality.
 - **JavaScript (ES6+)**: Core programming language for the application.
 
-## Installation
-To run KuroAI locally, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/earlkian8/KuroAI.git
-   cd kuroAI
-   ```
-
-2. **Install dependencies**:
-   Since this project uses CDN-hosted React and Tailwind CSS, no Node.js or `npm install` is required. However, ensure you have a modern browser to run the application.
-
-3. **Set up environment variables**:
-   Create a `.env` file in the root directory and add your Gemini API key:
-   ```plaintext
-   VITE_GEMINI_API_KEY=your_gemini_api_key_here
-   ```
-   See [Environment Variables](#environment-variables) for more details.
-
-4. **Run the application**:
-   Open the `index.html` file in a browser (e.g., using a local server like `Live Server` in VS Code) or host it on a web server.
-
-## Usage
-1. Open the application in a browser.
-2. Interact with the chatbot by typing messages in the input field.
-3. The chatbot, powered by the Gemini API, will respond to your queries in real-time.
-4. Customize the UI by modifying the Tailwind CSS classes in the React components.
-
 ## Environment Variables
 To integrate the Gemini API, you need to provide an API key. Create a `.env` file in the project root with the following:
 
 ```plaintext
-GEMINI_API_KEY=your_gemini_api_key_here
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
 - Obtain your API key from the Gemini API dashboard.

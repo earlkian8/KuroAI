@@ -1,15 +1,13 @@
 import React from 'react';
 
-// Simple function to convert markdown-like text to JSX
 const formatText = (text) => {
   if (!text) return '';
-  
-  // Split text into lines
+
   const lines = text.split('\n');
   const formattedLines = [];
   
   lines.forEach((line, index) => {
-    // Handle bullet points (*, -, or •)
+
     if (line.trim().match(/^[\*\-•]\s+/)) {
       const bulletText = line.replace(/^[\*\-•]\s+/, '');
       formattedLines.push(
@@ -19,7 +17,7 @@ const formatText = (text) => {
         </div>
       );
     }
-    // Handle numbered lists
+
     else if (line.trim().match(/^\d+\.\s+/)) {
       formattedLines.push(
         <div key={index} className="mb-1 ml-4">
@@ -27,7 +25,7 @@ const formatText = (text) => {
         </div>
       );
     }
-    // Handle headers (## or ###)
+
     else if (line.trim().startsWith('##')) {
       const headerText = line.replace(/^#+\s*/, '');
       formattedLines.push(
@@ -36,7 +34,7 @@ const formatText = (text) => {
         </h3>
       );
     }
-    // Handle bold text (**text**)
+
     else if (line.includes('**')) {
       const parts = line.split(/(\*\*[^*]+\*\*)/);
       const formattedParts = parts.map((part, partIndex) => {
@@ -51,11 +49,11 @@ const formatText = (text) => {
         </p>
       );
     }
-    // Handle empty lines
+
     else if (line.trim() === '') {
       formattedLines.push(<div key={index} className="h-2"></div>);
     }
-    // Handle regular paragraphs
+
     else if (line.trim()) {
       formattedLines.push(
         <p key={index} className="mb-2 leading-relaxed">
